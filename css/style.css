@@ -177,6 +177,27 @@ header .points2{
     font-size: 1.6rem;
 }
 
+.btn{
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    background-color: var(--main-color);
+    color: var(--light-one);
+    border-radius: 2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s;
+
+}
+
+.btn:hover{
+    background-color: #6b44e0;
+}
+
+.btn.small{
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+}
 /*End general styles*/
 
 /*Header*/
@@ -262,22 +283,6 @@ nav .container{
     margin: 2.15rem 0;
 }
 
-.btn{
-    display: inline-block;
-    padding: 0.85rem 2rem;
-    background-color: var(--main-color);
-    color: var(--light-one);
-    border-radius: 2rem;
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: .3s;
-
-}
-
-.btn:hover{
-    background-color: #6b44e0;
-}
 
 
 .header-content .image .img-element{
@@ -345,6 +350,7 @@ header .circle {
 }
 
 .card-wrap{
+    position: relative;
     margin: 1.7rem 0.8rem;
 }
 .card{
@@ -356,12 +362,13 @@ header .circle {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 3rem 2rem;
     overflow: hidden;
     transition: 0.3s;
 }
 
-.card:before{
+.card:before {
     content: attr(data-card);
     position: absolute;
     top: -15px;
@@ -374,14 +381,14 @@ header .circle {
     
 }
 
-.card:after{
+.card:after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 8px;
+    height: 0px;
     bottom: 0;
     left: 0;
-    background-color: var(--main-color);
+    background-color: #f10d0d;
     transition: 0.3s;
 
 }
@@ -391,7 +398,6 @@ header .circle {
 }
 
 .card-wrap:hover .card:after{
-    
     height: 8px;
 }
 
@@ -409,8 +415,20 @@ header .circle {
     margin: 1.8rem 0;
 }
 
-.btn.small{
-    padding: 0.7rem 1.8rem;
-    font-size: 1rem;
-}
+
+.services .points1 {
+    bottom: -50px;
+    left: -125px;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  
+  .services .points2 {
+    bottom: -70px;
+    right: -65px;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+
 /*End Services*/
