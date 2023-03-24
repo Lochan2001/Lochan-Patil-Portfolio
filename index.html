@@ -25,37 +25,31 @@
                 <img src="./img/shapes/wavy-shape.png" class="shape wave wave2" alt="" />
                 <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
                 <img src="./img/shapes/square.png" class="shape square" alt="" /> 
-                <img src="./img/shapes/letters.png" class="letters" alt="" />
+                <!-- <img src="./img/shapes/letters.png" class="letters" alt="" /> -->
                 
             </div>
 
             <nav>
                 <div class="container">
                     <div class="logo">
-                        <img src="./img/person-pic3.jpg" alt="logo">
+                        <img src="./img/lp.JPG" alt="logo">
                     </div>
                     <div class="links">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#header" class="active">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">Services</a>
+                                    <a href="#services">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#">Portfolio</a>
+                                    <a href="#portfolio">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="#about">About</a>
                                 </li>
                                 <li>
-                                    <a href="#">Testimonials</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="active">Hire Me</a>
+                                    <a href="#contact">Contact</a>
                                 </li>
                         </ul>
                     </div>
@@ -66,11 +60,11 @@
             <div class="header-content">
               <div class="container grid-2">
                   <div class="column-1">
-                    <h1 class="header-title">Lochan Patil</h1>
-                    <p class="text">
-                        Hello, I'm Lochan Patil, Android Developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor! 
-                    </p>
-                    <a href="#" class="btn">Download CV</a>
+                    <p>Application Developer</p>
+                    <h1>Hi, I'm <span>Lochan</span><br>Patil From India</h1>
+          
+                    <a href="https://drive.google.com/uc?id=1bN5xilC2UvmZtV1AJhJGzq5wwseoVMpu&export=download"
+                    class="btn" >Download CV</a>
                   </div>
                 
                <div class="column-2 image">
@@ -83,11 +77,11 @@
         </header>
 
 
-        <section class="services section">
+        <section class="services section" id="services">
             <div class="container">
                 <div class="section-header">
                     <h3 class="title" data-title="What I Do">Services</h3>
-                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, obcaecati.</p>
+                    
                 </div>
             </div>
 
@@ -102,8 +96,8 @@
                         <div class="card-content">
                             <img src="./img/design-icon.png" class="icon" alt="" >
                             <h3 class="title-sm">Front End Design</h3>
-                            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tenetur magnam eveniet.</p>
-                            <a href="#" class="btn small">Read More</a>
+                            <p class="text">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                            <a href="https://github.com/Lochan2001?tab=overview&from=2021-01-01&to=2021-01-20" target="_blank"class="btn small">See More</a>
                         </div>
 
                     </div>
@@ -139,7 +133,7 @@
             </div>
         </section>
 
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
             <div class="background-bg">
                 <div class="overlay overlay-sm">
                     <img
@@ -166,136 +160,45 @@
 
             <div class="container">
                 <div class="section-header">
-                    <h3 class="title" data-title="My works">Portfolio</h3>
-
-                </div>
-
-                <div class="section-body">
-                    <div class="filter">
-                        <button class="filter-btn active" data-filter="*">All</button>
-                        <button class="filter-btn" data-filter=".ui">UI/UX</button>
-                        <button class="filter-btn" data-filter=".webdev">Web Dev</button>
-                        <button class="filter-btn" data-filter=".appdev">
-                          Mobile App
-                        </button>
-                        <button class="filter-btn" data-filter=".logo-design">
-                          Logo Design
-                        </button>
-                      </div>
-
-                      <div class="grid">
-                        <div class="grid-item logo-design">
-                          <div class="gallery-image">
-                            <img src="./img/portfolio/port1.jpg" alt="" />
-                            <div class="img-overlay">
-                              <div class="plus"></div>
-                              <div class="img-description">
-                                <h3>Logo Design</h3>
-                                <h5>View Demo</h5>
-                              </div>
-                            </div>
+                    <h1 class="title" data-title="My works">Portfolio</h1>
+                      <div class="work-list">
+                        <div class="work">
+                          <img src="img/portfolio/work-1.png">
+                          <div class="layer">
+                            <h3>Driver Drowsiness Detection App</h3>
+                            <p>This app detects the driver drowsiness while driving and gives alert if driver is drowsy</p>
+                            <a href="#"target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                           </div>
                         </div>
-                        <div class="grid-item webdev">
-                          <div class="gallery-image">
-                            <img src="./img/portfolio/port2.png" alt="" />
-                            <div class="img-overlay">
-                              <div class="plus"></div>
-                              <div class="img-description">
-                                <h3>Web Development</h3>
-                                <h5>View Demo</h5>
-                              </div>
-                            </div>
+                        <div class="work">
+                          <img src="img/portfolio/work-2.png">
+                          <div class="layer">
+                            <h3>City Guide Android App</h3>
+                            <p class="work-info">This app is a handy city guide for any user. The user can travel to any point in the new city using this app.</p>
+                            <a href="https://github.com/Lochan2001/City_Guide" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                           </div>
                         </div>
-                        <div class="grid-item ui webdev">
-                          <div class="gallery-image">
-                            <img src="./img/portfolio/port3.png" alt="" />
-                            <div class="img-overlay">
-                              <div class="plus"></div>
-                              <div class="img-description">
-                                <h3>Web Design</h3>
-                                <h5>View Demo</h5>
-                              </div>
-                            </div>
+                        <div class="work">
+                          <img src="img/portfolio/jarvis.jpg"width="650" height="350">
+                          <div class="layer">
+                            <h3>The JarvisAI Model</h3>
+                            <p>This AI do various tasks by employing cartain well-defined commands</p>
+                            <a href="https://github.com/Lochan2001/jarvisAI_model_"target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                           </div>
                         </div>
-                        <div class="grid-item ui">
-                          <div class="gallery-image">
-                            <img src="./img/portfolio/port4.png" alt="" />
-                            <div class="img-overlay">
-                              <div class="plus"></div>
-                              <div class="img-description">
-                                <h3>UI / UX Design</h3>
-                                <h5>View Demo</h5>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="grid-item logo-design">
-                          <div class="gallery-image">
-                            <img src="./img/portfolio/port5.jpg" alt="" />
-                            <div class="img-overlay">
-                              <div class="plus"></div>
-                              <div class="img-description">
-                                <h3>Logo Design</h3>
-                                <h5>View Demo</h5>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="grid-item appdev">
-                          <div class="gallery-image">
-                            <img src="./img/portfolio/port6.jpg" alt="" />
-                            <div class="img-overlay">
-                              <div class="plus"></div>
-                              <div class="img-description">
-                                <h3>App Development</h3>
-                                <h5>View Demo</h5>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="grid-item logo-design">
-                          <div class="gallery-image">
-                            <img src="./img/portfolio/port7.jpg" alt="" />
-                            <div class="img-overlay">
-                              <div class="plus"></div>
-                              <div class="img-description">
-                                <h3>Logo Design</h3>
-                                <h5>View Demo</h5>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="grid-item appdev ui">
-                          <div class="gallery-image">
-                            <img src="./img/portfolio/port8.png" alt="" />
-                            <div class="img-overlay">
-                              <div class="plus"></div>
-                              <div class="img-description">
-                                <h3>App Development</h3>
-                                <h5>View Demo</h5>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="grid-item ui webdev">
-                          <div class="gallery-image">
-                            <img src="./img/portfolio/port9.png" alt="" />
-                            <div class="img-overlay">
-                              <div class="plus"></div>
-                              <div class="img-description">
-                                <h3>Web Design</h3>
-                                <h5>View Demo</h5>
-                              </div>
-                            </div>
+                        <div class="work">
+                          <img src="img/portfolio/work-3.png">
+                          <div class="layer">
+                            <h3>AAYUSH Medi-Consult Application</h3>
+                            <p>This App basically allows us to Consult ourselves while sitting at our Home.</p>
+                            <a href="https://github.com/Lochan2001/AAYUSH-Medi_consult" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                           </div>
                         </div>
                       </div>
-                      <div class="more-folio">
-                        <a href="#" class="btn">More Folio</a>
-                      </div>
+                    <a href="https://github.com/Lochan2001?tab=overview&from=2021-01-01&to=2021-01-20" target="_blank"
+                    class="btn">See more</a>  
+
+                      
                 </div>
             </div>
         </section>
@@ -319,31 +222,129 @@
                   minima repudiandae iure iste molestiae exercitationem earum
                   neque tempora?
                 </p>
-                <div class="skills">
-                  <div class="skill java">
-                    <h3 class="skill-title">Java</h3>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="85%"></div>
-                    </div>
-                  </div>
-                  <div class="skill python">
-                    <h3 class="skill-title">Python</h3>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="60%"></div>
-                    </div>
-                  </div>
-                  <div class="skill sql">
-                    <h3 class="skill-title">SQL</h3>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="80%"></div>
-                    </div>
-                  </div>
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links"onclick="opentab('education')">Education</p>
                 </div>
-                <a href="#" class="btn">Read more</a>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span>App Developement</span><br>Building Android/iOS apps</li>
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Database Management</span><br>Managing Databases</li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li><span>2018-2022</span><br>Bachelor of Engineering in Computer Engineering<br>Passed with 8.99 CGPA</li>
+                    <li><span>2017-2018</span><br>12th Grade passed with 72.46%</li>
+                    <li><span>2015-2016</span><br>10th Grade passed with 84.6%</li>
+                  </ul>
+                </div>
               </div>
   
               
             </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact" >
+          <div class="container">
+            <div class="contact-box">
+              <div class="contact-info">
+                <h3 class="title">Get in touch</h3>
+                <div class="information-wrap">
+                  <div class="information">
+                    <div class="contact-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <p class="info-text">Juna Satara Near Ram Mandir,Bhusawal 425201</p>
+                  </div>
+                </div>
+
+                <div class="information-wrap">
+                  <div class="information">
+                    <div class="contact-icon">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <p class="info-text">patillochan123@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="information-wrap">
+                  <div class="information">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <p class="info-text">+91-9325621491</p>
+                    
+                  </div>
+                  <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/lochan-patil-96742a192/
+                    " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="contact-form">
+                <h3 class="title">Contact Me</h3>
+                <form name="submit-to-google-sheet">
+                <div class="row">
+                  <input type="text" name="First Name"class="contact-input" placeholder="First Name" required>
+                  <input type="text" name="Last Name"class="contact-input" placeholder="Last Name" required>
+                </div>
+                <div class="row">
+                  <input type="text" name="phone"class="contact-input" placeholder="Phone" required>
+                  <input type="email" name="email"class="contact-input" placeholder="Emails" required>
+                </div>
+                <div class="row">
+                  <textarea name="message" class="contact-input textarea" placeholder="Message" required></textarea>
+                </div>
+                <button type ="submit" class="btn btn2">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>patillochan123@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9325621491</p>
+                <div class="social-icons">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.linkedin.com/in/lochan-patil-96742a192/
+                  " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="contact-right">
+                <form>
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+              </div>
+            </div>
+          </div> -->
+        </section>
+        <section class="copyright section" id="copyright"> 
+          <div class="container">
+          <div class="copyright">
+            <p>Copyright @ Lochan. Made with <i class="fa-solid fa-heart"></i> by Lochan Patil</p>
+          </div>
           </div>
         </section>
     </main>
@@ -352,6 +353,21 @@
     <script src="./js/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwPRrrURz0hw_SQAyqHs5ovhWsQEnaamZclVd1iEBwi93erpbyQ107x-46mjEgsa1AnfQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+
 </body>
 
 </html>
