@@ -228,8 +228,9 @@ header{
 }
 
 nav{
+  
     width: 100%;
-    position: relative;
+    position: fixed;
     z-index: 50;
 }
 
@@ -274,12 +275,17 @@ nav .container{
 }
 
 .links a:hover {
-    color: var(--main-color);
+  color: var(--light-one);
+  background-color: var(--main-color);
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: 0.9rem 2.1rem;
+  margin-left: 1rem;
 }
 
 .links a.active:hover{
-    color: var(--light-one);
-    background-color: #6b44e0;
+  color: var(--light-one);
+  background-color: #6b44e0;
 
 }
 
@@ -365,6 +371,14 @@ header .circle {
     top: -5px;
     left: 15px;
     opacity: 0.06;
+
+}
+.github-btn{
+  margin-top: 30px;
+  margin-right: 50px;
+  width: 300px;
+  padding: 14px 30px;
+  border-radius: 6px;
 
 }
 /*End Header*/
