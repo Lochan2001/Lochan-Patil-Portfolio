@@ -306,6 +306,7 @@
                 </div>
                 <button type ="submit" class="btn btn2">Send</button>
                 </form>
+                <span id="msg"></span>
               </div>
             </div>
           </div>
@@ -352,13 +353,19 @@
 
 
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwPRrrURz0hw_SQAyqHs5ovhWsQEnaamZclVd1iEBwi93erpbyQ107x-46mjEgsa1AnfQ/exec'
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzn0I2pTCsf2M9XU3maMl4lPMe-QYtSPID8LZvwOqm0H2B7vpqvMXcsiZLP55mYclevkQ/exec'
       const form = document.forms['submit-to-google-sheet']
-    
+      const msg= document.getElementById("msg")
       form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
+          .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
           .catch(error => console.error('Error!', error.message))
       })
     </script>
