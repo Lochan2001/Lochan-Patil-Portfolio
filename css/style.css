@@ -233,6 +233,8 @@ nav{
     width: 100%;
     position: fixed;
     z-index: 50;
+    background: transparent;
+    backdrop-filter: blur(9px);
 }
 
 nav .container{
