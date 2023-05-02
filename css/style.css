@@ -1033,15 +1033,40 @@ transform: translateY(-5px);
   color:#ff004f;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------css for small screen-----------*/
 @media screen and (max-width: 600px){ 
   .grid-2{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    align-items: baseline;
+    /*align-items: baseline;*/
     justify-content: center;
 } 
-  
+   .header .conatiner{
+    margin-left: 10px;
+   }
+
    .links{
        margin-right: 30px;
     }
@@ -1051,7 +1076,7 @@ transform: translateY(-5px);
       bottom: 0;
     }
     .header-content .container.grid-2 .column-1{
-      margin-left: 3.5rem;
+      margin-left: 2.2rem;
       margin-top: 120px;
     }
     .header-content .container.grid-2 .column-1 .name-title{
@@ -1061,18 +1086,23 @@ transform: translateY(-5px);
       font-size: 25px;
     }
     .header-content .container.grid-2 .column-2 .img-element.z-index {
-      width: 100px;
+      width: 90px;
+      margin-top: 50px;
       
     }
+    .header-content .image .img-element .z-index{
+      max-width: 350px;
+      margin-top: 350px;
+  }
     .btnresume{
       font-size: 14px;
     }
     
     .z-index{
-      margin-top:15px; 
+      margin-top:10rem; 
       position: relative;
-      margin-left: 2rem;
-      width: 230px;
+      margin-right: 2rem;
+      width: 200px;
       z-index: 2;
     }
    
