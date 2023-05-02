@@ -759,7 +759,11 @@ header .circle {
   margin-top: 50px;
     overflow: hidden;
   }
-  
+  .z-index1{
+    margin-top:110px; 
+    position: relative;
+    z-index: 2;
+}
   .about img {
     max-width: 600px;
   }
@@ -1092,16 +1096,18 @@ transform: translateY(-5px);
     }
     .header-content .image .img-element .z-index{
       max-width: 350px;
-      margin-top: 350px;
+      
   }
     .btnresume{
       font-size: 14px;
     }
     
     .z-index{
-      margin-top:10rem; 
+      margin-top:1rem; 
       position: relative;
       margin-right: 2rem;
+     
+      align-items: center;
       width: 200px;
       z-index: 2;
     }
@@ -1463,7 +1469,15 @@ color: var(--main-color);
     overflow: hidden;
     position: relative;
   }
-  
+  .z-index1{
+    margin-top:1rem; 
+    position: relative;
+    margin-right: 2rem;
+    margin-left: 3.5rem;
+    align-items: center;
+    width: 200px;
+    z-index: 2;
+  }
   .about img {
     max-width: 350px;
   }
