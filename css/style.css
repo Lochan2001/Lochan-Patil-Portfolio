@@ -66,6 +66,8 @@ img{
     margin-left: 1.5rem;
 }
 
+
+
 .image{
     position: relative;
     display: flex;
@@ -292,12 +294,22 @@ nav .container{
 
 }
 
+.lottie-anim{
+  margin-top: 150px;
+  right: 0;
+}
+
+.svg{
+  margin-top: 150px;
+  right: 0;
+}
 
 .header-content .container.grid-2{
     grid-template-columns: 2.5fr 3.5fr;
     min-height: calc(100vh - 6rem);
     padding-bottom: 2.5rem;
     text-align: left;
+    
 }
 
 
@@ -308,6 +320,11 @@ nav .container{
 
 .header-content .container.grid-2 .column-1 span{
   color: #ff004f;
+}
+.header-content .container.grid-2 .column-2{
+  display: block;
+  margin-top: 90px;
+  margin-left: 210px;
 }
 .header-title{
     font-size: 3.8rem;
@@ -956,7 +973,7 @@ header .circle {
 }
 .social-icons{
   margin-top: 30px;
-  width: 300px;
+  width: 350px;
   
   padding: 14px 30px;
   border-radius: 6px;
@@ -1175,6 +1192,19 @@ nav ul .fa-solid{
       margin-top: 50px;
       
     }
+
+
+    .header-content .container.grid-2 .column-2{
+      display: none;
+    }
+
+
+    /* .header-content .container.grid-2 .column-2{
+      height: 10px;
+      width:10px;
+      margin-top: 90px;
+      
+    } */
     .header-content .image .img-element .z-index{
       max-width: 350px;
       
